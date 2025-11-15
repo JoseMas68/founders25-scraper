@@ -1,0 +1,9 @@
+# URLs de ejemplo para batch scraping
+# Formato: una URL por línea
+# Las líneas que empiecen con # son comentarios
+
+https://www.crunchbase.com/organization/airbnb
+https://angel.co/company/airbnb
+https://www.producthunt.com/products/airbnb
+
+# Agrega más URLs aquí...
