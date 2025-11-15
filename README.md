@@ -54,6 +54,47 @@ nano .env  # o usar tu editor preferido
 - `DOCS/arquitectura.md` — Estructura del proyecto (próximamente)
 - `examples/` — Scripts de ejemplo (próximamente)
 
+## 🗑️ Cómo Borrar Archivos
+
+### Borrar un archivo del sistema
+```bash
+# Linux/Mac
+rm nombre_del_archivo
+
+# Windows (CMD)
+del nombre_del_archivo
+
+# Windows (PowerShell)
+Remove-Item nombre_del_archivo
+```
+
+### Borrar un archivo del repositorio Git
+```bash
+# Borrar archivo del sistema y del repositorio
+git rm nombre_del_archivo
+git commit -m "Eliminar nombre_del_archivo"
+
+# Borrar solo del repositorio (mantener en sistema local)
+git rm --cached nombre_del_archivo
+git commit -m "Dejar de trackear nombre_del_archivo"
+```
+
+### Borrar un directorio
+```bash
+# Linux/Mac
+rm -r nombre_directorio
+
+# Windows (CMD)
+rmdir /s nombre_directorio
+
+# Windows (PowerShell)
+Remove-Item -Recurse nombre_directorio
+
+# Git (directorio completo)
+git rm -r nombre_directorio
+git commit -m "Eliminar directorio nombre_directorio"
+```
+
 ## ⚠️ Notas Importantes
 
 1. **No instalar en clase**: Las dependencias están documentadas pero no pre-instaladas
